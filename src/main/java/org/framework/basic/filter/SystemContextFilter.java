@@ -25,7 +25,7 @@ public class SystemContextFilter implements Filter {
         try {
             Integer.parseInt(config.getInitParameter(Constants.Common.PAGE_SIZE));
         } catch (BaseException e) {
-            logger.error("从web.xml配置文件中获取分页大小参数失败======"+e.getMessage(),e);
+            logger.error("从web.xml配置文件中获取pageSize失败!"+e.getMessage(),e);
 
         }
 
