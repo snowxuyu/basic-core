@@ -48,7 +48,7 @@ public class SystemContextFilter implements Filter {
             SystemContext.setRealPath(((HttpServletRequest) request).getSession().getServletContext().getRealPath("/"));
             chain.doFilter(request, response);
         }catch (BaseException e) {
-            logger.error("分页参数中==当前页参数===获取失败,传入参数为:"+request.getParameter(Constants.Common.CURRENT_PAGE));
+            logger.error("分页参数  currentPage  获取失败,传入参数为:"+request.getParameter(Constants.Common.CURRENT_PAGE));
         } finally {
             SystemContext.removeCurrentPage();
             SystemContext.removePageSize();
