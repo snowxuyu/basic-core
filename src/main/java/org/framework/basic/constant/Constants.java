@@ -12,6 +12,8 @@ public interface Constants {
     public interface System {
         public static final String SUCCESSS = "1" ;  //1表示成功
         public static final String ERROR = "-1";   //-1表示失败
+
+        public static final String OK_CODE = "200";
     }
 
     /**
