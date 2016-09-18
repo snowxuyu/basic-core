@@ -3,6 +3,7 @@ package org.framework.basic.system;
 /**
  * Created by snow on 2015/7/24.
  * 用了传递分页数据 排序数据
+ * 统一使用分页插件 这个类不再使用
  */
 public class SystemContext {
 

@@ -6,6 +6,7 @@ import java.util.List;
 
 /**分页公式  (currentPage-1)*pageSize, pageSize
  * Created by snow on 2015/7/24.
+ * 统一使用分页插件 这个类不再使用
  */
 @Data
 public class Page<T> {

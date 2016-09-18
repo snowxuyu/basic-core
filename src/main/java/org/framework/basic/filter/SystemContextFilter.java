@@ -9,6 +9,8 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 import javax.servlet.*;
+import javax.servlet.annotation.WebFilter;
+import javax.servlet.annotation.WebInitParam;
 import javax.servlet.http.HttpServletRequest;
 
 import java.io.IOException;
@@ -16,7 +18,9 @@ import java.io.IOException;
 
 /**
  * Created by snow on 2015/7/24.
+ * 使用注解的方式，自己写的分页功能太麻烦了，统一使用分页插件
  */
+@WebFilter(filterName = "SystemContextFilter", urlPatterns = "/*", initParams = {@WebInitParam(name = "pageSize", value = "10")})
 public class SystemContextFilter implements Filter {
 
     private final Logger logger =  LoggerFactory.getLogger(getClass());
